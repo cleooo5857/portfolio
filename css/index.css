@@ -1,0 +1,378 @@
+@charset "utf-8";
+
+html,
+body{
+    background-color: #141414;
+}
+
+@media screen and (min-width:993px){
+
+header{
+    margin-top: 50px;
+    height: 40px;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4vw;
+}
+
+header p{
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Noto Sans KR", arial,sans-serif;
+}
+
+header p:last-child{
+    cursor: pointer;
+}
+
+header p:last-child:hover{
+    color:#bb86fc;
+    border-bottom:2px solid #bb86fc;
+}
+
+.main{
+    margin-top: 4.84375vw;
+}
+
+.content-header{
+    display: flex;
+    overflow: hidden;
+    height: 6vw;
+    margin-bottom: 4.84375vw;
+    box-sizing: border-box;
+}
+
+
+.content-header > h2{
+    position: relative;
+    line-height: 1.3;
+}
+
+.content-header > h2:first-child{
+    min-width: 50vw;
+}
+
+.content-header > h2 .slides-item{
+    display: block;
+}
+
+.content-header > h2 + h2{
+
+}
+
+.content-body > p{
+    font-size: 8.025vw;
+    line-height: 1.250em;
+}
+
+.content-infor{
+    margin-top: 3.75vw;
+    position: relative;
+    display: flex;
+}
+
+.content-infor-left{
+    width: 70%;
+    padding-right: 8%;
+}
+
+.content-infor-left > .infor-head{
+    font-size: 1.725vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-infor-left  > .infor-head  > p + p{
+    position: relative;
+    padding-right: 2%;
+}
+
+.content-infor-left > .infor-head > p + p::after{
+    position:absolute;
+    content: "";
+    top: -39%;
+    right: -17%;
+    width: 2.8125vw;
+    height: 2.8125vw;
+    background-color: #bb86fc;
+    border-radius: 100%;
+}
+
+.content-infor-left > .infor-body{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 1.40625vw;
+}
+
+.content-infor-left > .infor-body > p{
+    width: 70%;
+}
+
+.content-infor-left > .infor-body > p + p{
+    font-size:16px;
+    font-weight: 400;
+}
+
+.content-infor-right{
+    width: 30%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 30%;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    
+}
+
+.content-infor-right  .video{
+    height: 43.1875vw;
+    transform: translateY(-20%);
+    object-position: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    
+}
+
+.content-infor-right  video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    -o-object-position: bottom;
+    object-position: bottom;
+}
+
+.folio-heading{
+    text-align: right;
+    margin-right: 9.375vw;
+}
+
+.folio-heading  h3{
+    font-size: 9.025vw;
+    position: relative;
+}
+
+.folio-heading  p{
+    
+}
+
+.folio-heading > p{
+    margin: .1vw 2vw;
+}
+
+.folio-body{
+    margin:17vw 0 0 8vw;
+}
+
+.folio-item{
+    max-width: 100%;
+    border-top: 2px solid #fff;
+    display: flex;
+    padding: 3.5vw 0;
+    justify-content: space-between;
+}
+
+.folio-item:first-child{
+    border-top: 0;
+}
+
+.folio-item:last-child{
+    border-bottom: 2px solid #fff !important;
+}
+
+.folio-item > .text > p{
+    font-size: 4.40625vw;
+    line-height: 1.4;
+}
+
+.folio-item > .text > p ~ p{
+    font-size: 1.40625vw;
+}
+
+.folio-item > .text > p:last-child{
+    font-weight: 200;
+    font-size: 1.10625vw;
+}
+
+
+.folio-item > .folio-video{
+    width: 30%;
+}
+
+.folio-item > .folio-video video{
+    width: 100%;
+}
+
+.contact-form{
+    margin: 10vw 0;
+}
+
+.contact-form > .container{
+    display: flex;
+}
+
+.contact-infor{
+    padding-right: 10vw;
+}
+
+.contact-infor h2{
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.contact-infor p{
+    padding: 1.2vw 0;
+    line-height: 1.4;
+    font-size: 1.16vw;
+    font-weight: 200;
+}
+
+.contact-infor > a{
+    transition: .3s;
+    font-size: 1.4vw;
+    font-weight: 200;
+}
+
+.contact-infor a:hover{
+    transition: .3s;
+    color: #bb86fc;
+}
+
+form{
+    display: block;
+    width: 1000px;
+    font-weight: 200;
+}
+
+fieldset{
+    border: 0;
+}
+
+form label{
+    display: block;
+    font-size: 1.2rem;
+    padding: 2.5rem 0 1.2rem;
+    color: rgba(255,255,255,.87);
+}
+form input[type=email], 
+form input[type=number], 
+form input[type=password], 
+form input[type=search], 
+form input[type=tel], 
+form input[type=text], 
+form input[type=url], 
+form textarea, form select {
+    appearance: none;
+    border: none;
+    border: 3px solid rgba(255,255,255,.6);
+    box-sizing: inherit;
+    padding: 1.2vw 1.2vw;
+    width: 94%;
+    color: rgba(255,255,255,.6);
+    outline: 0;
+    background-color: transparent;
+    transition: .3s border;
+    border-radius: 3px;
+}
+
+form textarea{
+    height: 200px;
+}
+
+form ul{
+    padding: 0;
+}
+
+form input[type=submit]{
+    width: 99.5%;
+    border: 3px solid rgba(255,255,255,.6);
+    color: rgba(255,255,255,.6);
+    background-color: transparent;
+    padding: 0.7rem 2.5rem;
+    margin-top: 1vw;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    transition: .3s border,.3s color;
+}
+
+form input[type=submit]:hover{
+    border: 3px solid #bb86fc;
+}
+
+.contact-media{
+    padding: 9.375vw 0;
+}
+
+.contact-media > ul{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.contact-media > ul > li{
+    width: 33.3%;
+    border: 1px solid #fff;
+}
+
+.contact-media > ul > li:first-child{
+    border-right: 0;
+    border-left: 0;
+
+}
+
+.contact-media > ul > li:last-child{
+    border-right: 0;
+    border-left: 0;
+}
+
+.contact-media > ul > li:hover{
+    background: rgb(187, 134, 252,.4);
+}
+
+.contact-media > ul > li > a{
+    padding: 10% 0;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.contact-media > ul > li:hover a{
+    background: rgb(187, 134, 252,.4);
+    font-size: 0;
+}
+
+.contact-media > ul > li a::before{
+    font-size: 1.3rem;
+}
+
+.contact-media > ul > li:first-child:hover a::before{
+    content: 'https://github.com/cleooo5857';
+}
+
+.contact-media > ul > li:nth-child(2):hover a::before{
+    content: 'zleooo';
+}
+
+.contact-media > ul > li:last-child:hover a::before{
+    content: '010-4589-7089';
+}
+
+footer{
+}
+
+footer  p{
+    text-align: center;
+    padding: 3rem 0;
+    color: rgba(255,255,255,.6);
+}
+}
+

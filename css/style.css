@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+
+
+h3{
+    font-size: 1.375rem;
+    line-height: 1.23;
+}
+
+.sub-font{
+    font-family: 'Times New Roman',sans-serif;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.font-color{
+    color:#fff;
+}
+
+.font-sub-color{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.section-elements{
+    text-indent: -99999px;
+}
+
+.mt-4{
+    margin-top: 20px;
+}
+
+.mt-8{
+    margin-top: 40px;
+}
+
+.classification{
+margin: 4.84375vw 0 20.3125vw;
+}
+
+.container{
+    padding: 0 4%;
+}
+
+.cursor{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    pointer-events: none;
+    transition: .2s;
+    mix-blend-mode: difference;
+}
+
+.txt-ani:hover  ~ .cursor{
+    box-sizing: border-box;
+    transform: scale(5);
+}
+
+.txt-ani:hover  ~ .cursor::before{
+    content: "CLICK";
+    position: absolute;
+    font-size: 1px;
+    font-weight: 500;
+    left: 0;
+    top: 35%;
+    color: #000;
+}
+
+
+
+.txt-ani {
+    transition: clip-path 1s, transform 1s, opacity 1s;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    /* transform: translate3d(0,1em,0) skewY(5deg); */
+    opacity: 0;
+} 
+
+.jhs-appear.jhs-appear-active .txt-ani {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: translate3d(0,0,0) skewY(0deg);
+    opacity: 1;
+}
+
+ .txt-ani *  /*p,h2,label,input*/ { 
+    transition: transform 1s;
+    /* transform: translate3d(0,3vw,0) skewY(15deg); */
+    transform-origin: left;
+}
+
+
+
+.jhs-appear.jhs-appear-active * /*.txt-ani p,h2,label,input */{
+    transform: translateZ(0) skewY(0deg);
+}
+/* jhs-appear 라이브러리 시작 */
+
+
+.jhs-appear-slide-up {
+    opacity: 0;
+    transition: opacity 1s, transform 0.5s;
+    transform: translateY(100%);
+}
+
+.jhs-appear-slide-up.jhs-appear-active {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.jhs-appear-slide-right {
+    opacity: 0;
+    transition: opacity 1s, transform 0.5s;
+    transform: translateX(-100%);
+}
+
+.jhs-appear-slide-right.jhs-appear-active {
+    opacity: 1;
+    transform: translateX(0%);
+} */
+
+.contact-media > ul > li:hover{
+    content: "01045897089";
+}
+
+@media screen and (min-width:993px){
+    h2{
+        font-size: 2.1875vw;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        padding: 0 1.25rem;
+    }
+}
+
+
+

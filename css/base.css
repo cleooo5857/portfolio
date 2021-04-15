@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 모든 페이지에 들어가는 공통서식 */
+
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
+        
+body{
+	font-size:16px;
+	color:#ffffff;   
+}
+
+a{
+	text-decoration: none;
+	color:#fff;
+    
+}
+ 
+         
